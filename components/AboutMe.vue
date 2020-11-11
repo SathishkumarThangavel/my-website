@@ -1,6 +1,14 @@
 <template>
     <div class="section-container"> 
         <div class="introduction"></div>
+        <h2>Tech I know</h2>
+        <ul>
+            <li><img src="~/assets/vuejs.svg"> Vuejs, <img src="~/assets/preactjs.svg"> PreactJs, <img src="~/assets/emberjs.svg"> Emberjs, <img src="~/assets/stenciljs.png"> Stenciljs</li>
+            <li> SCSS/CSS, LESS/CSS, Bootstrap, ElementUI</li>
+            <li>Hugo Js, NuxtJs, Gatsby/GraphQL</li>
+            <li>Git, Gulp, npm/yarn</li>
+            <li><b>Tools:</b> VScode/Atom code editor, Adobe XD/Figma</li>
+        </ul>
         <h2 id="work-experience">Work Experience</h2>
         <!-- Freshworks -->
         <div class="experience">
@@ -16,7 +24,7 @@
             </div>
             <div class="project">
                 <h3>Tech team - Platform</h3>
-                <p>Enhance the developer platform, Requirement analysis, design, develop, review codes, support developer community and organization maintained opensource contribution</p>
+                <p>Enhance the developer platform, Requirement analysis, design, develop, review codes, support developer community and organization maintained open source contribution</p>
             </div>
         </div>
         <hr>
@@ -53,6 +61,14 @@ export default {
     }
     h2 {
         margin: 24px 0;
+    }
+    li {
+        padding: 5px 0;
+    }
+    li img {
+        width: 15px;
+        height: 15px;
+        margin: 0;
     }
     .experience {
         display: flex;
