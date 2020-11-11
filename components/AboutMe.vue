@@ -120,4 +120,9 @@ export default {
         margin-bottom: 0.5rem;
         border-color: rgb(74, 85, 104);
     }
+    @media screen and (max-width: 600px) {
+        .section-container {
+            max-width: 80%;
+        }
+    }
 </style>
