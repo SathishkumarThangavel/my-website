@@ -18,10 +18,6 @@ export default {
     ],
     script: [
       {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-GK6SPEDJFH",
-        async: true,
-      },
-      {
         src: "~/assets/js/ga.js",
       }
     ]
