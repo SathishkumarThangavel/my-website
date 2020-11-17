@@ -15,6 +15,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-GK6SPEDJFH",
+        async: true,
+      },
+      {
+        src: "~/assets/js/ga.js",
+      }
     ]
   },
 
