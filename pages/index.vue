@@ -6,7 +6,7 @@
           <img src="~/assets/me.jpg">
           <h2 class="profile-name">Sathishkumar Thangavel</h2>
           <h3>Frontend Engineer</h3>
-          <h3><a href="https://freshworks.com">Freshworks</a></h3>
+          <h3><a href="https://freshworks.com" target="_blank" rel="noopener noreferrer">Freshworks</a></h3>
         </div>
       </div>
     </div>

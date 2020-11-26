@@ -15,14 +15,14 @@
             <section v-on:click="openWindow('https://web-components-kappa.vercel.app/')">
                 <img src="~/assets/toast.svg">
                 <div>
-                    <h4>Toast Web Component</h4>
+                    <h3>Toast Web Component</h3>
                     <p>Easy-to-use toast component built on stenciljs with web components concept.</p>
                 </div>
             </section>
             <section v-on:click="openWindow('https://www.npmjs.com/package/ember-simple-range-slider')">
                 <img src="~/assets/slider.svg">
                 <div>
-                    <h4>Ember Range Slider</h4>
+                    <h3>Ember Range Slider</h3>
                     <p>A node module can be used in emberjs as addon. Range slider with consistent design across browser</p>
                 </div>
             </section>
@@ -95,7 +95,8 @@ export default {
         line-height: 1.6em;
         margin: 20px 0;
     }
-    #personal-projects h4 {
+    #personal-projects h3 {
+        font-size: 16px;
         color: #0e04b1;
     }
     #personal-projects section img {
