@@ -9,6 +9,25 @@
             <li>Git, Gulp, npm/yarn</li>
             <li><b>Tools:</b> VScode/Atom code editor, Adobe XD/Figma</li>
         </ul>
+
+        <div id="personal-projects">
+            <h2 >Personal Projects</h2>
+            <section v-on:click="openWindow('https://web-components-kappa.vercel.app/')">
+                <img src="~/assets/toast.svg">
+                <div>
+                    <h4>Toast Web Component</h4>
+                    <p>Easy-to-use toast component built on stenciljs with web components concept.</p>
+                </div>
+            </section>
+            <section v-on:click="openWindow('https://www.npmjs.com/package/ember-simple-range-slider')">
+                <img src="~/assets/slider.svg">
+                <div>
+                    <h4>Ember Range Slider</h4>
+                    <p>A node module can be used in emberjs as addon. Range slider with consistent design across browser</p>
+                </div>
+            </section>
+        </div>
+
         <h2 id="work-experience">Work Experience</h2>
         <!-- Freshworks -->
         <div class="experience">
@@ -52,6 +71,11 @@
 <script>
 export default {
     name: 'about-me',
+    methods: {
+        openWindow(link) {
+            window.open(link, '_blank');
+        }
+    }
 }
 </script>
 <style scoped>
@@ -60,7 +84,24 @@ export default {
         margin: 50px auto;
     }
     h2 {
-        margin: 24px 0;
+        margin: 35px 0 20px;
+    }
+    #personal-projects section {
+        padding: 20px;
+        background-color: #d1f9f9;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        line-height: 1.6em;
+        margin: 20px 0;
+    }
+    #personal-projects h4 {
+        color: #0e04b1;
+    }
+    #personal-projects section img {
+        width: 30px;
+        height: 30px;
+        margin-right: 25px
     }
     li {
         padding: 5px 0;
