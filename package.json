@@ -2,6 +2,9 @@
   "name": "my-website",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">10.3.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -15,6 +18,7 @@
     "nuxt": "^2.14.6"
   },
   "devDependencies": {
+    "@nuxtjs/svg": "^0.1.12",
     "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^26.5.0",

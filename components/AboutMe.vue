@@ -3,7 +3,7 @@
         <div class="introduction"></div>
         <h2>Tech I know</h2>
         <ul>
-            <li><img src="~/assets/vuejs.svg"> Vuejs, <img src="~/assets/preactjs.svg"> PreactJs, <img src="~/assets/emberjs.svg"> Emberjs, <img src="~/assets/stenciljs.png"> Stenciljs</li>
+            <li> Vuejs, PreactJs,  Emberjs, Stenciljs</li>
             <li> SCSS/CSS, LESS/CSS, Bootstrap, ElementUI</li>
             <li>Hugo Js, NuxtJs, Gatsby/GraphQL</li>
             <li>Git, Gulp, npm/yarn</li>
@@ -13,14 +13,14 @@
         <div id="personal-projects">
             <h2 >Personal Projects</h2>
             <section v-on:click="openWindow('https://web-components-kappa.vercel.app/')">
-                <img src="~/assets/toast.svg">
+                <toastIcon />
                 <div>
                     <h3>Toast Web Component</h3>
                     <p>Easy-to-use toast component built on stenciljs with web components concept.</p>
                 </div>
             </section>
             <section v-on:click="openWindow('https://www.npmjs.com/package/ember-simple-range-slider')">
-                <img src="~/assets/slider.svg">
+                <sliderIcon />
                 <div>
                     <h3>Ember Range Slider</h3>
                     <p>A node module can be used in emberjs as addon. Range slider with consistent design across browser</p>
@@ -32,10 +32,14 @@
         <!-- Freshworks -->
         <div class="experience">
             <div class="company">
-                <img src="~/assets/freshworks.svg" class="logo" alt="">
+                <div class="logo">
+                    <img src="~/assets/freshworks.svg" width="40" height="40" class="logo" alt="freshworks logo">
+                </div>
                 <h3>Freshworks</h3>
                 <a target="_blank" href="https://www.freshworks.com" rel="noopener noreferrer">
-                    <img src="~/assets/openlink.svg" class="open-external-link" alt="">
+                    <div class="open-external-link">
+                        <openlinkIcon />
+                    </div>
                 </a>
             </div>
             <div class="period">
@@ -50,10 +54,12 @@
         <!-- Zoho -->
         <div class="experience">
             <div class="company">
-                <img src="~/assets/zoho.png" class="logo" style="width:100px;height:auto" alt="Zoho">
+                <img src="~/assets/zoho.png" style="margin-right: 0.5rem" width="100" height="35" alt="Zoho logo">
                 <h3>Corporation Pvt. Ltd</h3>
                 <a target="_blank" href="https://www.zoho.com" rel="noopener noreferrer">
-                    <img src="~/assets/openlink.svg" class="open-external-link" alt="">
+                    <div class="open-external-link">
+                        <openlinkIcon />
+                    </div>
                 </a>
             </div>
             <div class="period">
@@ -69,8 +75,13 @@
     </div>
 </template>
 <script>
+import openlinkIcon from "~/assets/openlink.svg?inline";
+import toastIcon from "~/assets/toast.svg?inline";
+import sliderIcon from "~/assets/slider.svg?inline";
+
 export default {
     name: 'about-me',
+    components: { openlinkIcon, toastIcon, sliderIcon },
     methods: {
         openWindow(link) {
             window.open(link, '_blank');
@@ -99,18 +110,19 @@ export default {
         font-size: 16px;
         color: #0e04b1;
     }
-    #personal-projects section img {
+    #personal-projects section svg {
         width: 30px;
         height: 30px;
         margin-right: 25px
     }
+    @media only screen and (max-width: 1000px)  {
+        #personal-projects section svg {
+            min-width: 30px;
+            min-height: 30px;
+        }
+    }
     li {
         padding: 5px 0;
-    }
-    li img {
-        width: 15px;
-        height: 15px;
-        margin: 0;
     }
     .experience {
         display: flex;
