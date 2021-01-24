@@ -3,7 +3,7 @@
     <div class="container">
       <div class="hero">
         <div class="profile">
-          <img src="~/assets/me.jpg" srcset="~/assets/me.jpg 2x, ~/assets/me-min.jpg 1x" width="208" height="200" alt="profile picture">
+          <img src="~/assets/profilepicture-2x.jpg" srcset="~/assets/profilepicture-2x.jpg 2x, ~/assets/profilepicture-1x.jpg 1x" width="208" height="200" alt="profile picture">
           <h2 class="profile-name">Sathishkumar Thangavel</h2>
           <h3>Frontend Engineer</h3>
           <h3><a href="https://freshworks.com" target="_blank" rel="noopener noreferrer">Freshworks</a></h3>
