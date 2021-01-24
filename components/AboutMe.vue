@@ -3,7 +3,7 @@
         <div class="introduction"></div>
         <h2>Tech I know</h2>
         <ul>
-            <li> Vuejs, PreactJs,  Emberjs, Stenciljs</li>
+            <li> Vuejs, Emberjs, Angularjs, preactjs, Stenciljs</li>
             <li> SCSS/CSS, LESS/CSS, Bootstrap, ElementUI</li>
             <li>Hugo Js, NuxtJs, Gatsby/GraphQL</li>
             <li>Git, Gulp, npm/yarn</li>
