@@ -6,7 +6,10 @@ export default {
   target: 'static',
 
   googleAnalytics: {
-    id: 'UA-183240208-1'
+    id: 'UA-183240208-1',
+    autoTracking: {
+      screenview: true
+    }
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
