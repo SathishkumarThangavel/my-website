@@ -6,7 +6,7 @@ export default {
   target: 'static',
 
   googleAnalytics: {
-    id: 'G-4XX4HF66ET'
+    id: 'UA-183240208-1'
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
